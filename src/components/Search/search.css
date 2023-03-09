@@ -1,0 +1,44 @@
+.search{
+    cursor: pointer;
+}
+
+.search::before{
+    content: "Encuentra tu preferido";
+    vertical-align: text-top;
+    border-bottom: 1px solid #fff;
+    padding: 8px 42px 8px 4px;
+    margin-right: -24px;
+    font-family: roboto,sans-serif;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: .01em;
+}
+
+.search::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(https://res.cloudinary.com/academiageek/image/upload/v1678134155/MIC/busqueda_vokrg5.svg);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+
+@media (max-width:600px){
+    .search{display: none;}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .search{display: none;}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .search{display: none;}
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .search{display: none;}
+    
+  }

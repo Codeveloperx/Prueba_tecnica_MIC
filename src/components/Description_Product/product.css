@@ -1,0 +1,175 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.title_container{
+    padding-bottom: 15px;
+    color: #000;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    color: #131e29;
+    font-family: 'Roboto';
+    text-align: left;
+    max-width: 340px;
+    
+}
+
+
+.ref{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
+}
+
+.ref span:first-child{
+    color: #131e29;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.ref span:nth-child(2){
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: .02em;
+    color: #828282;
+}
+.ref span:nth-child(2)::before{
+    content: "Ref.";
+    padding-right: 5px;
+
+}
+.precios{
+    padding-bottom: 3rem;
+}
+
+.precios span:first-child{
+    color: #828282;
+    text-decoration: line-through;
+    padding-right: 1rem;
+
+}
+
+.precios span:nth-child(2){
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #131e29;
+    
+}
+
+.tallas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.talla{
+    display: flex;
+    gap: 16px;
+    color: #131e29;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: .005em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.guia_tallas{
+    letter-spacing: .005em;
+    text-decoration-line: underline;
+    font-size: 12px; 
+    padding-left: 17px; 
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button_cart{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 1rem;
+  
+}
+
+.cantidad{
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bdbdbd;
+}
+.btns{
+    font-weight: 800;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+.disabled{
+    pointer-events: none;
+}
+.enabled{
+    pointer-events: auto;
+}
+
+.add_cart{
+    border: none;
+    background-color: #131e29;
+    padding: 10px 25px;
+    border-radius: 0;
+    width: 276px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .content{
+        padding: 20px 20px;
+    }
+    .tallas{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 0 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .guia_tallas{
+        padding:0; 
+    }
+
+    .title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: .01em;
+        max-width: 324px;
+        
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .content{
+        padding: 20px 20px;
+    }
+
+}
